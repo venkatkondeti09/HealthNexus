@@ -70,8 +70,9 @@ const Chat = () => {
                                 placeholder="Type your message here"
                                 value={newMessage}
                                 onChange={e => setNewMessage(e.target.value)}
+                                style={{background:"#6b76ff",borderRadius:"15px"}}
                             ></textarea>
-                            <button className="btn btn-primary mt-2" onClick={handleSendMessage}>Send Message</button>
+                            <button className='btn btn-success' style={{margin:"15px"}} onClick={handleSendMessage}>Send Message</button>
                         </div>
                     </div>
                 </div>

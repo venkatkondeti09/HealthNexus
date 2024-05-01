@@ -49,13 +49,13 @@ const Chat = () => {
                         <br/>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }}>
                             {messages.map(message => (
-                                <div key={message._id} style={{ border: '1px solid #ccc', borderRadius: '5px', boxShadow: '0 0 5px rgba(0, 0, 0, 0.1)' }}>
-                                    <div style={{ padding: '20px' }}>
+                                <div key={message._id} style={{ border: '1px solid black', borderRadius: '5px', boxShadow: '0 0 5px rgba(0, 0, 0, 0.1)' }}>
+                                    <div style={{ padding: '20px',background:" #9fd3c7"}}>
                                         <div>
                                             <UserIcon /> : <b>{message.sender.name}</b> <br/>
                                             <EmailIcon/> : <b>{message.sender.email}</b>
                                         </div>
-                                        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+                                        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px'}}>
                                             <MessageIcon/>
                                             <p>{message.message}</p>
                                         </div>
@@ -64,14 +64,14 @@ const Chat = () => {
                             ))}
                         </div>
                         {/* Form to send message to all users */}
-                        <div style={{ marginTop: '20px' }}>
+                        <div style={{ marginTop: '20px'}}>
                             <textarea
                                 className="form-control"
                                 rows="3"
                                 placeholder="Type your message here"
                                 value={newMessage}
                                 onChange={e => setNewMessage(e.target.value)}
-                            ></textarea>
+                            style={{background:"#ececec"}}></textarea>
                             <button className="btn btn-primary mt-2" onClick={handleSendMessage}>Send Message</button>
                         </div>
                     </div>

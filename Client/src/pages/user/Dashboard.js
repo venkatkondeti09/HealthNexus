@@ -8,7 +8,7 @@ const CountDisplay = ({ icon, label, count }) => (
   <div className="count-display" style={{
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     flexDirection: 'column', margin: '10px', padding: '20px', borderRadius: '10px', boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
-    height: '25vh', width: '500px', backgroundColor: '#32aeb1'
+    height: '25vh', width: '500px', backgroundColor: '#83ffe6'
   }}>
     <i className={icon} style={{ fontSize: '24px', marginBottom: '10px' }}></i>
     <strong>{count}</strong>
@@ -108,7 +108,7 @@ const Dashboard = () => {
               <input type="file" accept="image/*" style={{ display: 'none' }} onChange={handleImageChange} id="image-upload" />
             </div>
             <br />
-            <div className="card w-75 p-3">
+            <div className="card w-75 p-3" style={{background:"#a58bff",marginLeft:"30px"}}>
               <h3>Name : {auth?.user?.name}</h3>
               <h3>Email : {auth?.user?.email}</h3>
               <h3>Address: {auth?.user?.address}</h3>
