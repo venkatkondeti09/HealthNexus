@@ -21,7 +21,7 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 config();
 
-
+// hello
 //Connection to database 
 const dbUrl = 'mongodb://0.0.0.0:27017/shopping'
 mongoose.Promise = global.Promise;
@@ -76,7 +76,7 @@ const options = {
           type: "http",
           scheme: "bearer",
           bearerFormat: "JWT",
-          value : "Bearer <JWT token here>"
+          value: "Bearer <JWT token here>"
         }
       }
     },
